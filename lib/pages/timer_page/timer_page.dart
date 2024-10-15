@@ -68,6 +68,7 @@ class ButtonsContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final stateManager = getIt<TimerPageManager>();
+    // TODO: extract to a new file, i.e. see time_left_notifier
     return ValueListenableBuilder(
       valueListenable: stateManager.buttonNotifier,
       builder: (_, buttonState, __) {

@@ -7,6 +7,7 @@ import 'package:minimalist_state_timer_app/services/storage_service/storage_serv
 class TimeLeftNotifier extends ValueNotifier<String> {
   TimeLeftNotifier() : super(_durationString(_initialValue));
 
+  // TODO: make this initial time editable by the user
   static const int _initialValue = 10;
   int _currentTimeLeft = _initialValue;
 

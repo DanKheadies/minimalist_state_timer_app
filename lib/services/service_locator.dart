@@ -11,4 +11,5 @@ void setupGetIt() {
 
   // service layer
   getIt.registerLazySingleton<StorageService>(() => SharedPreferencesStorage());
+  // TODO: swap out the SharedPreferencesStorage with something else like Firebase
 }
